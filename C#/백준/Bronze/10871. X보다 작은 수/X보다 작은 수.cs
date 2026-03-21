@@ -1,14 +1,15 @@
-string[] str1 = Console.ReadLine().Split(" ");
-int[] arr1 = new int[str1.Length];
-arr1 = Array.ConvertAll(str1, int.Parse);
+string[] a = Console.ReadLine().Split(" ");
+int[] arr = new int[2];
+arr = Array.ConvertAll(a, int.Parse);
 
-string[] str2 = Console.ReadLine().Split(" ");
-int[] arr2 = new int[str2.Length];
-arr2 = Array.ConvertAll(str2, int.Parse);
+string[] b = Console.ReadLine().Split(" ");
+int[] arr2 = new int[arr[0]];
+arr2 = Array.ConvertAll(b, int.Parse);
 
-for(int i=0; i < arr1[0]; i++)
+
+for (int i = 0; i < arr[0]; i++)
 {
-    if(arr2[i] < arr1[1])
+    if(arr[1] > arr2[i])
     {
         Console.Write(arr2[i] + " ");
     }
